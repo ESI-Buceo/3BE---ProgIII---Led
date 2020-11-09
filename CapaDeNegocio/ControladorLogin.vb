@@ -2,11 +2,14 @@
 
 Public Module ControladorLogin
 
-    Public Function Autentificar(usuario As String, contra As String)
-        Dim l As New ModeloLogin(usuario, contra)
+    Public Function Autentificar(User As String, Pass As String, rol As String)
+        Dim l As New ModeloLogin(User, Pass) With {
+            .Cedula = User
+        }
+        Return l.ObtenerRol(rol)
 
-        Return l.ObtenerRol()
 
     End Function
+
 
 End Module

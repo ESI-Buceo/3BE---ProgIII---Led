@@ -7,15 +7,18 @@
 
     Public NombreUsuario As String
     Public ContraUsuario As String
+    Public Cedula As String
 
-    Public Function ObtenerRol()
+    Public Function ObtenerRol(rol As String)
         Command.CommandText = "
             SELECT
-                rol
+                COUNT(ci_persona)
             FROM
                 roles
             WHERE
-                ci_persona = '" + Me.Pwd + "'
+                ci_persona = " + Me.Cedula + "
+                AND
+                    rol = " + rol + " > 0
         "
         Return Command.ExecuteScalar.ToString
     End Function

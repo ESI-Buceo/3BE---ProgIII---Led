@@ -72,6 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmConsultas.Designer.vb">
+      <DependentUpon>FrmConsultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Enviar_Recomendaciones.Designer.vb">
+      <DependentUpon>Frm_Enviar_Recomendaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Enviar_Recomendaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_Login.Designer.vb">
       <DependentUpon>Frm_Login.vb</DependentUpon>
     </Compile>
@@ -102,6 +114,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmConsultas.resx">
+      <DependentUpon>FrmConsultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Enviar_Recomendaciones.resx">
+      <DependentUpon>Frm_Enviar_Recomendaciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +150,194 @@
       <Project>{997a5a6d-c7fc-4e6c-ad76-1e16b593760b}</Project>
       <Name>CapaDeNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Correcto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorrectoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorrectoFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuidarteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuidarteLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarBloqueadoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmLogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Historial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedIconFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedIconFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedLogoLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_size.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_size_invert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men3n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHistoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiePagina1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginMedico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesplegarChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecomendacionMen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecomendacionWomen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalizarChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarCorreoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarMensajeBloqueadoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\RecomendacionMen1.png" />
+    <None Include="Resources\RecomendacionWomen1.png" />
+    <None Include="Resources\RecomendacionMen11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

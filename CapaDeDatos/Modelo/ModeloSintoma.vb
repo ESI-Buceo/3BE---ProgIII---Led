@@ -5,6 +5,7 @@
         MyBase.New(user, pass)
     End Sub
 
+    Public ListadoSintomas As List(Of String)
     Public IdSintoma As String
     Public Nombre As String
     Public Activo As String
@@ -16,33 +17,40 @@
             FROM
                 sintoma
             WHERE
-                nombre LIKE '%" + Me.Nombre + "%'"
+                nombre LIKE '%" + Me.Nombre + "%'
+                AND
+                    activo = 1
+            "
+
         Reader = Command.ExecuteReader()
         Return Reader
 
     End Function
 
-    Public Function ListarNombreSintoma()
+    Public Function ListarNombreSintomaActivo()
         Command.CommandText = "
             SELECT 
                 nombre AS Sintoma 
             FROM 
                 sintoma
+            WHERE
+                activo = 1
         "
         Reader = Command.ExecuteReader()
         Return Reader
 
     End Function
 
-    Public Function ListarTodo()
+    Public Function ListarNombreSintomaInactivo()
         Command.CommandText = "
-            SELECT
-                id AS ID, nombre AS Nombre
-            FROM
+            SELECT 
+                nombre AS Sintoma 
+            FROM 
                 sintoma
+            WHERE
+                activo = 0
         "
-
-        Reader = Command.ExecuteReader
+        Reader = Command.ExecuteReader()
         Return Reader
 
     End Function
@@ -83,4 +91,71 @@
         Command.ExecuteNonQuery()
 
     End Sub
+
+    Public Sub Eliminar(nombre As String)
+        Command.CommandText = "
+            UPDATE 
+                sintoma 
+            SET 
+                activo = 0 
+            WHERE 
+                nombre = " + nombre + "
+        "
+        Command.ExecuteNonQuery()
+    End Sub
+
+    Public Function ObtenerExistencia()
+        Command.CommandText = "
+            SELECT
+                COUNT(id)
+            FROM
+                sintoma
+            WHERE
+                nombre = '" + Me.Nombre + "' > 0
+        "
+        Return Command.ExecuteScalar.ToString
+
+    End Function
+
+    Public Function EstaInactivo()
+        Command.CommandText = "
+            SELECT
+                COUNT(id)
+            FROM
+                sintoma
+            WHERE
+                nombre = '" + Me.Nombre + "'
+                AND
+                    activo = 0 > 0
+        "
+        Return Command.ExecuteScalar.ToString()
+
+    End Function
+
+    Public Function ObtenerId()
+        Command.CommandText = "
+            SELECT
+                id
+            FROM
+                sintoma
+            WHERE
+                nombre = '" + Me.Nombre + "'
+        "
+        Return Command.ExecuteScalar.ToString()
+
+    End Function
+
+    Public Sub ActivarSintoma()
+        Command.CommandText = "
+            UPDATE
+                sintoma
+            SET 
+                activo = 1
+            WHERE
+                id = " + Me.IdSintoma + "
+        "
+        Command.ExecuteNonQuery()
+
+    End Sub
+
 End Class

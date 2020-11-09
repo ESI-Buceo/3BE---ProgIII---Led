@@ -22,48 +22,48 @@ Partial Class Frm_Menu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Frm_Menu))
         Me.LblSaludo = New System.Windows.Forms.Label()
         Me.LblSintomas = New System.Windows.Forms.Label()
         Me.CmbSintomas = New System.Windows.Forms.ComboBox()
         Me.Sintomas = New System.Windows.Forms.Label()
         Me.BtnDiagnostico = New System.Windows.Forms.Button()
         Me.LvSintomas = New System.Windows.Forms.ListView()
-        Me.PanelChat = New System.Windows.Forms.Panel()
-        Me.LblId = New System.Windows.Forms.Label()
-        Me.TxtIdDiagnostico = New System.Windows.Forms.TextBox()
-        Me.BtnVolver = New System.Windows.Forms.Button()
-        Me.TxtEnfermedad = New System.Windows.Forms.TextBox()
-        Me.TxtDescripcion = New System.Windows.Forms.TextBox()
-        Me.TxtPrioridad = New System.Windows.Forms.TextBox()
-        Me.LblDescripcion = New System.Windows.Forms.Label()
-        Me.LblPrioridad = New System.Windows.Forms.Label()
-        Me.LblEnfermedad = New System.Windows.Forms.Label()
-        Me.LblIniciarChat = New System.Windows.Forms.Label()
-        Me.BtnIniciarChat = New System.Windows.Forms.Button()
-        Me.PanelChat.SuspendLayout()
+        Me.LblAdvertencia = New System.Windows.Forms.Label()
+        Me.PnlMenu = New System.Windows.Forms.Panel()
+        Me.LblHistorial = New System.Windows.Forms.Label()
+        Me.LblMisDatos = New System.Windows.Forms.Label()
+        Me.PctConsultas = New System.Windows.Forms.PictureBox()
+        Me.PctDatosPropios = New System.Windows.Forms.PictureBox()
+        Me.PctSalir = New System.Windows.Forms.PictureBox()
+        Me.PctMenu = New System.Windows.Forms.PictureBox()
+        Me.PnlMenu.SuspendLayout()
+        CType(Me.PctConsultas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PctDatosPropios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PctSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PctMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LblSaludo
         '
         Me.LblSaludo.AutoSize = True
-        Me.LblSaludo.BackColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(183, Byte), Integer))
-        Me.LblSaludo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.25!)
-        Me.LblSaludo.ForeColor = System.Drawing.Color.White
-        Me.LblSaludo.Location = New System.Drawing.Point(247, 112)
+        Me.LblSaludo.BackColor = System.Drawing.Color.Transparent
+        Me.LblSaludo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSaludo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.LblSaludo.Location = New System.Drawing.Point(408, 26)
         Me.LblSaludo.Name = "LblSaludo"
-        Me.LblSaludo.Size = New System.Drawing.Size(240, 29)
+        Me.LblSaludo.Size = New System.Drawing.Size(0, 29)
         Me.LblSaludo.TabIndex = 2
-        Me.LblSaludo.Text = "Buen día, username"
         '
         'LblSintomas
         '
         Me.LblSintomas.AutoSize = True
-        Me.LblSintomas.BackColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(183, Byte), Integer))
-        Me.LblSintomas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.25!)
-        Me.LblSintomas.ForeColor = System.Drawing.Color.White
-        Me.LblSintomas.Location = New System.Drawing.Point(247, 157)
+        Me.LblSintomas.BackColor = System.Drawing.Color.Transparent
+        Me.LblSintomas.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSintomas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.LblSintomas.Location = New System.Drawing.Point(404, 136)
         Me.LblSintomas.Name = "LblSintomas"
-        Me.LblSintomas.Size = New System.Drawing.Size(294, 29)
+        Me.LblSintomas.Size = New System.Drawing.Size(277, 29)
         Me.LblSintomas.TabIndex = 4
         Me.LblSintomas.Text = "Cuentenos, ¿que siente?"
         '
@@ -71,8 +71,10 @@ Partial Class Frm_Menu
         '
         Me.CmbSintomas.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.CmbSintomas.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CmbSintomas.BackColor = System.Drawing.Color.White
+        Me.CmbSintomas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CmbSintomas.FormattingEnabled = True
-        Me.CmbSintomas.Location = New System.Drawing.Point(340, 224)
+        Me.CmbSintomas.Location = New System.Drawing.Point(371, 195)
         Me.CmbSintomas.Name = "CmbSintomas"
         Me.CmbSintomas.Size = New System.Drawing.Size(343, 21)
         Me.CmbSintomas.TabIndex = 15
@@ -89,161 +91,159 @@ Partial Class Frm_Menu
         '
         'BtnDiagnostico
         '
-        Me.BtnDiagnostico.Location = New System.Drawing.Point(422, 423)
+        Me.BtnDiagnostico.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.BtnDiagnostico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BtnDiagnostico.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnDiagnostico.Enabled = False
+        Me.BtnDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDiagnostico.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDiagnostico.ForeColor = System.Drawing.Color.White
+        Me.BtnDiagnostico.Location = New System.Drawing.Point(663, 437)
         Me.BtnDiagnostico.Name = "BtnDiagnostico"
-        Me.BtnDiagnostico.Size = New System.Drawing.Size(177, 39)
+        Me.BtnDiagnostico.Size = New System.Drawing.Size(177, 56)
         Me.BtnDiagnostico.TabIndex = 18
         Me.BtnDiagnostico.Text = "Realizar Diagnostico"
-        Me.BtnDiagnostico.UseVisualStyleBackColor = True
+        Me.BtnDiagnostico.UseVisualStyleBackColor = False
         '
         'LvSintomas
         '
+        Me.LvSintomas.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.LvSintomas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LvSintomas.HideSelection = False
-        Me.LvSintomas.Location = New System.Drawing.Point(307, 268)
+        Me.LvSintomas.Location = New System.Drawing.Point(245, 238)
         Me.LvSintomas.Name = "LvSintomas"
-        Me.LvSintomas.Size = New System.Drawing.Size(401, 125)
+        Me.LvSintomas.Size = New System.Drawing.Size(595, 166)
         Me.LvSintomas.TabIndex = 20
         Me.LvSintomas.UseCompatibleStateImageBehavior = False
+        Me.LvSintomas.View = System.Windows.Forms.View.Tile
         '
-        'PanelChat
+        'LblAdvertencia
         '
-        Me.PanelChat.Controls.Add(Me.LblId)
-        Me.PanelChat.Controls.Add(Me.TxtIdDiagnostico)
-        Me.PanelChat.Controls.Add(Me.BtnVolver)
-        Me.PanelChat.Controls.Add(Me.TxtEnfermedad)
-        Me.PanelChat.Controls.Add(Me.TxtDescripcion)
-        Me.PanelChat.Controls.Add(Me.TxtPrioridad)
-        Me.PanelChat.Controls.Add(Me.LblDescripcion)
-        Me.PanelChat.Controls.Add(Me.LblPrioridad)
-        Me.PanelChat.Controls.Add(Me.LblEnfermedad)
-        Me.PanelChat.Controls.Add(Me.LblIniciarChat)
-        Me.PanelChat.Controls.Add(Me.BtnIniciarChat)
-        Me.PanelChat.Location = New System.Drawing.Point(98, 31)
-        Me.PanelChat.Name = "PanelChat"
-        Me.PanelChat.Size = New System.Drawing.Size(816, 459)
-        Me.PanelChat.TabIndex = 21
-        Me.PanelChat.Visible = False
+        Me.LblAdvertencia.AutoSize = True
+        Me.LblAdvertencia.BackColor = System.Drawing.Color.Transparent
+        Me.LblAdvertencia.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAdvertencia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.LblAdvertencia.Location = New System.Drawing.Point(242, 439)
+        Me.LblAdvertencia.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblAdvertencia.Name = "LblAdvertencia"
+        Me.LblAdvertencia.Size = New System.Drawing.Size(0, 18)
+        Me.LblAdvertencia.TabIndex = 24
         '
-        'LblId
+        'PnlMenu
         '
-        Me.LblId.AutoSize = True
-        Me.LblId.ForeColor = System.Drawing.Color.White
-        Me.LblId.Location = New System.Drawing.Point(262, 47)
-        Me.LblId.Name = "LblId"
-        Me.LblId.Size = New System.Drawing.Size(21, 13)
-        Me.LblId.TabIndex = 10
-        Me.LblId.Text = "ID:"
+        Me.PnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.PnlMenu.Controls.Add(Me.LblHistorial)
+        Me.PnlMenu.Controls.Add(Me.LblMisDatos)
+        Me.PnlMenu.Controls.Add(Me.PctConsultas)
+        Me.PnlMenu.Controls.Add(Me.PctDatosPropios)
+        Me.PnlMenu.Location = New System.Drawing.Point(22, 85)
+        Me.PnlMenu.Name = "PnlMenu"
+        Me.PnlMenu.Size = New System.Drawing.Size(180, 372)
+        Me.PnlMenu.TabIndex = 25
         '
-        'TxtIdDiagnostico
+        'LblHistorial
         '
-        Me.TxtIdDiagnostico.Enabled = False
-        Me.TxtIdDiagnostico.Location = New System.Drawing.Point(242, 63)
-        Me.TxtIdDiagnostico.Name = "TxtIdDiagnostico"
-        Me.TxtIdDiagnostico.Size = New System.Drawing.Size(72, 20)
-        Me.TxtIdDiagnostico.TabIndex = 9
+        Me.LblHistorial.AutoSize = True
+        Me.LblHistorial.BackColor = System.Drawing.Color.Transparent
+        Me.LblHistorial.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHistorial.ForeColor = System.Drawing.Color.White
+        Me.LblHistorial.Location = New System.Drawing.Point(61, 322)
+        Me.LblHistorial.Name = "LblHistorial"
+        Me.LblHistorial.Size = New System.Drawing.Size(66, 16)
+        Me.LblHistorial.TabIndex = 3
+        Me.LblHistorial.Text = "Historial"
+        Me.LblHistorial.Visible = False
         '
-        'BtnVolver
+        'LblMisDatos
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(591, 253)
-        Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(153, 45)
-        Me.BtnVolver.TabIndex = 8
-        Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.LblMisDatos.AutoSize = True
+        Me.LblMisDatos.BackColor = System.Drawing.Color.Transparent
+        Me.LblMisDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMisDatos.ForeColor = System.Drawing.Color.White
+        Me.LblMisDatos.Location = New System.Drawing.Point(52, 153)
+        Me.LblMisDatos.Name = "LblMisDatos"
+        Me.LblMisDatos.Size = New System.Drawing.Size(77, 16)
+        Me.LblMisDatos.TabIndex = 2
+        Me.LblMisDatos.Text = "Mis Datos"
+        Me.LblMisDatos.Visible = False
         '
-        'TxtEnfermedad
+        'PctConsultas
         '
-        Me.TxtEnfermedad.Enabled = False
-        Me.TxtEnfermedad.Location = New System.Drawing.Point(29, 64)
-        Me.TxtEnfermedad.Name = "TxtEnfermedad"
-        Me.TxtEnfermedad.Size = New System.Drawing.Size(196, 20)
-        Me.TxtEnfermedad.TabIndex = 7
+        Me.PctConsultas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PctConsultas.Image = Global.CapaDePresentacion.My.Resources.Resources.Historial
+        Me.PctConsultas.Location = New System.Drawing.Point(38, 219)
+        Me.PctConsultas.Name = "PctConsultas"
+        Me.PctConsultas.Size = New System.Drawing.Size(100, 100)
+        Me.PctConsultas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PctConsultas.TabIndex = 1
+        Me.PctConsultas.TabStop = False
+        Me.PctConsultas.Visible = False
         '
-        'TxtDescripcion
+        'PctDatosPropios
         '
-        Me.TxtDescripcion.Enabled = False
-        Me.TxtDescripcion.Location = New System.Drawing.Point(35, 237)
-        Me.TxtDescripcion.Multiline = True
-        Me.TxtDescripcion.Name = "TxtDescripcion"
-        Me.TxtDescripcion.Size = New System.Drawing.Size(279, 21)
-        Me.TxtDescripcion.TabIndex = 6
+        Me.PctDatosPropios.BackColor = System.Drawing.Color.Transparent
+        Me.PctDatosPropios.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PctDatosPropios.Image = Global.CapaDePresentacion.My.Resources.Resources.Men1
+        Me.PctDatosPropios.Location = New System.Drawing.Point(38, 50)
+        Me.PctDatosPropios.Name = "PctDatosPropios"
+        Me.PctDatosPropios.Size = New System.Drawing.Size(100, 100)
+        Me.PctDatosPropios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PctDatosPropios.TabIndex = 0
+        Me.PctDatosPropios.TabStop = False
+        Me.PctDatosPropios.Visible = False
         '
-        'TxtPrioridad
+        'PctSalir
         '
-        Me.TxtPrioridad.Enabled = False
-        Me.TxtPrioridad.ForeColor = System.Drawing.Color.White
-        Me.TxtPrioridad.Location = New System.Drawing.Point(29, 142)
-        Me.TxtPrioridad.Name = "TxtPrioridad"
-        Me.TxtPrioridad.Size = New System.Drawing.Size(285, 20)
-        Me.TxtPrioridad.TabIndex = 5
+        Me.PctSalir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PctSalir.Image = Global.CapaDePresentacion.My.Resources.Resources.Salir1
+        Me.PctSalir.Location = New System.Drawing.Point(939, 12)
+        Me.PctSalir.Name = "PctSalir"
+        Me.PctSalir.Size = New System.Drawing.Size(59, 58)
+        Me.PctSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PctSalir.TabIndex = 27
+        Me.PctSalir.TabStop = False
         '
-        'LblDescripcion
+        'PctMenu
         '
-        Me.LblDescripcion.AutoSize = True
-        Me.LblDescripcion.ForeColor = System.Drawing.Color.White
-        Me.LblDescripcion.Location = New System.Drawing.Point(42, 210)
-        Me.LblDescripcion.Name = "LblDescripcion"
-        Me.LblDescripcion.Size = New System.Drawing.Size(63, 13)
-        Me.LblDescripcion.TabIndex = 4
-        Me.LblDescripcion.Text = "Descripcion"
+        Me.PctMenu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PctMenu.Image = Global.CapaDePresentacion.My.Resources.Resources.MenuHamb1
+        Me.PctMenu.Location = New System.Drawing.Point(86, 12)
+        Me.PctMenu.Name = "PctMenu"
+        Me.PctMenu.Size = New System.Drawing.Size(59, 58)
+        Me.PctMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PctMenu.TabIndex = 28
+        Me.PctMenu.TabStop = False
         '
-        'LblPrioridad
-        '
-        Me.LblPrioridad.AutoSize = True
-        Me.LblPrioridad.ForeColor = System.Drawing.Color.White
-        Me.LblPrioridad.Location = New System.Drawing.Point(42, 126)
-        Me.LblPrioridad.Name = "LblPrioridad"
-        Me.LblPrioridad.Size = New System.Drawing.Size(51, 13)
-        Me.LblPrioridad.TabIndex = 3
-        Me.LblPrioridad.Text = "Prioridad:"
-        '
-        'LblEnfermedad
-        '
-        Me.LblEnfermedad.AutoSize = True
-        Me.LblEnfermedad.ForeColor = System.Drawing.Color.White
-        Me.LblEnfermedad.Location = New System.Drawing.Point(15, 48)
-        Me.LblEnfermedad.Name = "LblEnfermedad"
-        Me.LblEnfermedad.Size = New System.Drawing.Size(230, 13)
-        Me.LblEnfermedad.TabIndex = 2
-        Me.LblEnfermedad.Text = "Lo mas probable es que usted pueda padecer: "
-        '
-        'LblIniciarChat
-        '
-        Me.LblIniciarChat.AutoSize = True
-        Me.LblIniciarChat.ForeColor = System.Drawing.Color.White
-        Me.LblIniciarChat.Location = New System.Drawing.Point(538, 142)
-        Me.LblIniciarChat.Name = "LblIniciarChat"
-        Me.LblIniciarChat.Size = New System.Drawing.Size(266, 13)
-        Me.LblIniciarChat.TabIndex = 1
-        Me.LblIniciarChat.Text = "Si desea conversar con un profesional, haga click aqui"
-        '
-        'BtnIniciarChat
-        '
-        Me.BtnIniciarChat.Location = New System.Drawing.Point(591, 193)
-        Me.BtnIniciarChat.Name = "BtnIniciarChat"
-        Me.BtnIniciarChat.Size = New System.Drawing.Size(154, 47)
-        Me.BtnIniciarChat.TabIndex = 0
-        Me.BtnIniciarChat.Text = "Iniciar Chat"
-        Me.BtnIniciarChat.UseVisualStyleBackColor = True
-        '
-        'Frm_Paciente
+        'Frm_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(183, Byte), Integer))
+        Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1010, 528)
-        Me.Controls.Add(Me.PanelChat)
+        Me.Controls.Add(Me.PctMenu)
+        Me.Controls.Add(Me.PctSalir)
+        Me.Controls.Add(Me.PnlMenu)
+        Me.Controls.Add(Me.LblAdvertencia)
         Me.Controls.Add(Me.LvSintomas)
         Me.Controls.Add(Me.BtnDiagnostico)
         Me.Controls.Add(Me.Sintomas)
         Me.Controls.Add(Me.CmbSintomas)
         Me.Controls.Add(Me.LblSaludo)
         Me.Controls.Add(Me.LblSintomas)
-        Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "Frm_Paciente"
-        Me.Text = "Paciente"
-        Me.PanelChat.ResumeLayout(False)
-        Me.PanelChat.PerformLayout()
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "Frm_Menu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Menu Principal"
+        Me.PnlMenu.ResumeLayout(False)
+        Me.PnlMenu.PerformLayout()
+        CType(Me.PctConsultas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PctDatosPropios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PctSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PctMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -255,16 +255,12 @@ Partial Class Frm_Menu
     Friend WithEvents Sintomas As Label
     Friend WithEvents BtnDiagnostico As Button
     Friend WithEvents LvSintomas As ListView
-    Friend WithEvents PanelChat As Panel
-    Friend WithEvents TxtEnfermedad As TextBox
-    Friend WithEvents TxtDescripcion As TextBox
-    Friend WithEvents TxtPrioridad As TextBox
-    Friend WithEvents LblDescripcion As Label
-    Friend WithEvents LblPrioridad As Label
-    Friend WithEvents LblEnfermedad As Label
-    Friend WithEvents LblIniciarChat As Label
-    Friend WithEvents BtnIniciarChat As Button
-    Friend WithEvents BtnVolver As Button
-    Friend WithEvents LblId As Label
-    Friend WithEvents TxtIdDiagnostico As TextBox
+    Friend WithEvents LblAdvertencia As Label
+    Friend WithEvents PnlMenu As Panel
+    Friend WithEvents PctSalir As PictureBox
+    Friend WithEvents PctMenu As PictureBox
+    Friend WithEvents PctConsultas As PictureBox
+    Friend WithEvents PctDatosPropios As PictureBox
+    Friend WithEvents LblMisDatos As Label
+    Friend WithEvents LblHistorial As Label
 End Class

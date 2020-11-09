@@ -1,0 +1,760 @@
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+    ("Acne","BAJA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+    ("Aftas Bucales","ALTA");
+
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+    ("Bronquitis","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+    ("Coronavirus","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+    ("Ebola","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+    ("Bruxismo","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Endocarditis","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Neumonia","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Sarampion","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Gripe","BAJA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Varicela","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Vertigo","BAJA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Sifilis","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Hipertencion","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Halitosis","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Dengue","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Cistitis","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Gonorrea","BAJA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Diabetes","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Estafilococo","MEDIA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Hemorroides","BAJA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Hepatitis A","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Hepatitis B","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Hepatitis C","ALTA");
+INSERT INTO
+    enfermedad(nombre, prioridad)
+VALUES
+("Anemia","BAJA");
+
+
+
+
+
+
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('1','2');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('17','2');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('35','2');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('51','2');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('65','2');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('63','2');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('3','3');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('20','3');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('37','3');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('52','3');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('3','4');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('20','4');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('37','4');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('2','4');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('2','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('19','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('22','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('59','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('28','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('62','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('9','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('81','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('83','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('37','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('36','5');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('28','6');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('40','6');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('34','6');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('13','6');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('82','6');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('54','7');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('9','7');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('36','7');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('79','7');
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('46','8');    
+
+
+INSERT INTO
+    compone(id_sintoma, id_enfermedad)
+VALUES
+    ('66','8');   
+
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('68','8');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('55','8');
+
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('31','8');
+
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('57','8');
+
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('85','8');
+
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','9');
+
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('18','9');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('80','9');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('55','9');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('22','9');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('9','9');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('3','9');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('6','10');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('3','10');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('41','10');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('56','10');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('28','10');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('3','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('28','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('25','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('75','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('40','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('9','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('13','11');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','12');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('22','12');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('9','12');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('49','12');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('68','12');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('33','12');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('7','13');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('23','13');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('42','13');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('57','13');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('69','13');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('76','13');
+
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('8','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('24','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('28','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('9','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('46','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('13','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('40','14');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('9','15');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('7','15');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('23','15');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('58','15');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('10','16');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('25','16');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('43','16');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('7','17');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('23','17');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('44','17');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('53','17');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('70','17');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('40','17');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('11','18');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('27','18');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('36','18');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('60','18');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('71','18');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('12','19');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('28','19');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('45','19');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('61','19');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('71','19');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('13','20');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('29','20');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('8','20');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('77','20');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('5','21');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('30','21');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('47','21');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('62','21');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('15','21');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('78','21');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('14','22');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('32','22');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('48','22');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('63','22');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('13','23');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('33','23');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('49','23');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','23');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('72','23');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('50','23');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('15','24');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','24');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('50','24');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('55','24');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('7','24');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('23','24');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('13','24');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('16','25');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('13','25');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','25');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('33','25');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('73','25');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('11','25');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('1','1');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('2','1');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('3','1');
+INSERT INTO
+        compone(id_sintoma, id_enfermedad)
+VALUES
+        ('5','1');

@@ -64,14 +64,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControladorChatMedico.vb" />
-    <Compile Include="ControladorChatPaciente.vb" />
+    <Compile Include="ControladorChat.vb" />
     <Compile Include="ControladorCompone.vb" />
     <Compile Include="ControladorDiagnostico.vb" />
     <Compile Include="ControladorEnfermedad.vb" />
+    <Compile Include="ControladorGenera.vb" />
     <Compile Include="ControladorLogin.vb" />
     <Compile Include="ControladorPaciente.vb" />
+    <Compile Include="ControladorPadece.vb" />
     <Compile Include="ControladorSintoma.vb" />
+    <Compile Include="ControladorUsuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

@@ -16,6 +16,14 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FrmGestion", "CapaPresentac
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FrmMedico", "FrmMedico\FrmMedico.vbproj", "{99512E6B-F750-418B-A707-ACADAEC6A3D2}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnitTest", "UnitTest\UnitTest.vbproj", "{679B313F-0ACA-4EEB-A819-2202CA2DBDF9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador Medicos", "Instalador Medicos\Instalador Medicos.vdproj", "{FC434BDE-5AC5-401D-B9EA-533086EE8427}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador Gestores", "Instalador Gestores\Instalador Gestores.vdproj", "{91A4AA29-FBAB-49DA-8D8A-D691425DD2BE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador Pacientes", "Instalador Pacientes\Instalador Pacientes.vdproj", "{665625DD-2909-4128-80F0-5D0E741CE32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +50,16 @@ Global
 		{99512E6B-F750-418B-A707-ACADAEC6A3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99512E6B-F750-418B-A707-ACADAEC6A3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99512E6B-F750-418B-A707-ACADAEC6A3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679B313F-0ACA-4EEB-A819-2202CA2DBDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679B313F-0ACA-4EEB-A819-2202CA2DBDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679B313F-0ACA-4EEB-A819-2202CA2DBDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679B313F-0ACA-4EEB-A819-2202CA2DBDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC434BDE-5AC5-401D-B9EA-533086EE8427}.Debug|Any CPU.ActiveCfg = Debug
+		{FC434BDE-5AC5-401D-B9EA-533086EE8427}.Release|Any CPU.ActiveCfg = Release
+		{91A4AA29-FBAB-49DA-8D8A-D691425DD2BE}.Debug|Any CPU.ActiveCfg = Debug
+		{91A4AA29-FBAB-49DA-8D8A-D691425DD2BE}.Release|Any CPU.ActiveCfg = Release
+		{665625DD-2909-4128-80F0-5D0E741CE32A}.Debug|Any CPU.ActiveCfg = Debug
+		{665625DD-2909-4128-80F0-5D0E741CE32A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

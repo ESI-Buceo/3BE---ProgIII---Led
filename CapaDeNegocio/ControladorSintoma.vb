@@ -2,23 +2,10 @@
 
 Public Module ControladorSintoma
 
-    Public Function ListarSintoma(Sintoma As String)
-        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass) With {
-            .Nombre = Sintoma
-        }
-
-        Return s.Listar()
-    End Function
-
-    Public Function ListarSintoma()
+    Public Function ListarNombreSintomaActivo()
         Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass)
 
-        Return s.ListarTodo()
-    End Function
-
-    Public Function ListarNombre()
-        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass)
-        Return s.ListarNombreSintoma()
+        Return s.ListarNombreSintomaActivo()
 
     End Function
 
@@ -31,20 +18,52 @@ Public Module ControladorSintoma
     End Sub
 
     Public Sub CambiarNombreDeSintoma(idSintoma As String, nombre As String)
-        Dim s As New ModeloSintoma(ControladorSesion.Pass, ControladorSesion.Pass) With {
-            .IdSintoma = idSintoma,
-            .Nombre = nombre
+        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass) With {
+            .idSintoma = idSintoma,
+            .nombre = nombre
         }
         s.Modificar()
 
     End Sub
 
     Public Sub EliminarSintoma(id As String)
-        Dim s As New ModeloSintoma(ControladorSesion.Pass, ControladorSesion.Pass) With {
+        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass) With {
             .IdSintoma = id
         }
 
         s.Eliminar()
+    End Sub
+
+    Public Function ObtenerExistencia(nombre As String)
+        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass) With {
+            .nombre = nombre
+        }
+
+        Return s.ObtenerExistencia()
+    End Function
+
+    Public Function EstaInactivo(nombre As String)
+        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass) With {
+            .nombre = nombre
+        }
+
+        Return s.EstaInactivo()
+    End Function
+
+    Public Function ObtenerId(nombre As String)
+        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass) With {
+            .nombre = nombre
+        }
+
+        Return s.ObtenerId()
+    End Function
+
+    Public Sub ActivarSintoma(id As String)
+        Dim s As New ModeloSintoma(ControladorSesion.User, ControladorSesion.Pass) With {
+            .IdSintoma = id
+        }
+
+        s.ActivarSintoma()
     End Sub
 End Module
 

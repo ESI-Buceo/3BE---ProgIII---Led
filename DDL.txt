@@ -1,0 +1,118 @@
+use led;
+
+CREATE TABLE persona (
+  ci INT(9) NOT NULL,
+  nombre VARCHAR(25) NOT NULL,
+  apellido VARCHAR(25) NOT NULL,
+  mail VARCHAR(100) NOT NULL,
+  activo BOOLEAN NOT NULL DEFAULT TRUE,
+  PRIMARY KEY (ci)
+);
+
+CREATE TABLE roles(
+  ci_persona INT(9) NOT NULL,
+  rol TINYINT NOT NULL,
+  PRIMARY KEY (ci_persona, rol),
+  CONSTRAINT ci_persona_rol_fk FOREIGN KEY (ci_persona) REFERENCES persona (ci)
+);
+
+CREATE TABLE paciente (
+  ci_persona INT(9) NOT NULL,
+  sexo TINYINT NOT NULL,
+  fecha_nac DATE NOT NULL,
+  activo BOOLEAN NOT NULL DEFAULT TRUE, 
+  PRIMARY KEY (ci_persona),
+  CONSTRAINT ci_persona_pac_fk FOREIGN KEY (ci_persona) REFERENCES persona (ci)
+);
+
+CREATE TABLE enfermedades_cronicas(
+  ci_persona_paciente INT(9) NOT NULL,
+  enfermedad VARCHAR(40) NOT NULL,
+  PRIMARY KEY (ci_persona_paciente, enfermedad),
+  CONSTRAINT ci_persona_paciente_ec_fk FOREIGN KEY (ci_persona_paciente) REFERENCES paciente (ci_persona)
+);
+
+CREATE TABLE medicaciones(
+  ci_persona_paciente INT(9) NOT NULL,
+  medicacion VARCHAR(40) NOT NULL,
+  PRIMARY KEY (ci_persona_paciente, medicacion),
+  CONSTRAINT ci_persona_paciente_medi_fk FOREIGN KEY (ci_persona_paciente) REFERENCES paciente (ci_persona)
+);
+
+CREATE TABLE administrativo(
+  ci_persona INT(9) NOT NULL,
+  PRIMARY KEY (ci_persona),
+  activo BOOLEAN NOT NULL DEFAULT TRUE, 
+  CONSTRAINT ci_persona_adm_fk FOREIGN KEY (ci_persona) REFERENCES persona (ci) 
+);
+
+CREATE TABLE medico(
+  ci_persona INT(9) NOT NULL,
+  activo BOOLEAN NOT NULL DEFAULT TRUE, 
+  PRIMARY KEY (ci_persona),
+  CONSTRAINT ci_persona_med_fk FOREIGN KEY (ci_persona) REFERENCES persona (ci) 
+);
+
+CREATE TABLE sintoma(
+  id INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(50) UNIQUE NOT NULL,
+  activo BOOLEAN NOT NULL DEFAULT TRUE, 
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE enfermedad(
+  id INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(50) UNIQUE NOT NULL,
+  descripcion VARCHAR(500) NULL DEFAULT "Sin datos",
+  prioridad ENUM("ALTA","BAJA","MEDIA") NOT NULL,
+  activo BOOLEAN NOT NULL DEFAULT TRUE, 
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE diagnostico(
+  id INT NOT NULL AUTO_INCREMENT,
+  fecha DATE NOT NULL,
+  pertenece INT NOT NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE padece(
+  id INT AUTO_INCREMENT,
+  ci_persona_paciente INT NOT NULL,
+  id_sintoma INT NOT NULL,
+  PRIMARY KEY(id, ci_persona_paciente, id_sintoma),
+  CONSTRAINT ci_persona_paciente_pad_fk FOREIGN KEY (ci_persona_paciente) REFERENCES paciente (ci_persona),
+  CONSTRAINT id_sintoma_pad_fk FOREIGN KEY (id_sintoma) REFERENCES sintoma (id)
+);
+
+CREATE TABLE compone(
+  id_sintoma INT NOT NULL,
+  id_enfermedad INT NOT NULL,
+  PRIMARY KEY(id_sintoma, id_enfermedad),
+  CONSTRAINT id_sintoma_com_fk FOREIGN KEY (id_sintoma) REFERENCES sintoma (id),
+  CONSTRAINT id_enfermedad_com_fk FOREIGN KEY (id_enfermedad) REFERENCES enfermedad (id)
+);
+
+CREATE TABLE genera(
+  id_diagnostico INT NOT NULL,
+  id_sintoma INT NOT NULL,
+  id_enfermedad INT NOT NULL,
+  PRIMARY KEY (id_diagnostico, id_sintoma),
+  CONSTRAINT id_diagnostico_gen_fk FOREIGN KEY (id_diagnostico) REFERENCES diagnostico (id)
+);
+
+CREATE TABLE atiende(
+  id INT NOT NULL AUTO_INCREMENT,
+  fecha_hora TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+  ci_persona_medico INT DEFAULT NULL,
+  ci_persona_paciente INT NOT NULL,
+  id_diagnostico INT NOT NULL,
+  mensaje TEXT,
+  leido BOOLEAN NOT NULL DEFAULT FALSE,
+  destinatario INT(8) DEFAULT NULL,
+  status ENUM('Esperando','Iniciado','Finalizado') NOT NULL DEFAULT 'Esperando',
+  PRIMARY KEY(id, fecha_hora, ci_persona_paciente, id_diagnostico),
+  CONSTRAINT ci_persona_medico_ati_fk FOREIGN KEY (ci_persona_medico) REFERENCES medico (ci_persona),
+  CONSTRAINT ci_persona_paciente_ati_fk FOREIGN KEY (ci_persona_paciente) REFERENCES paciente (ci_persona),
+  CONSTRAINT id_diagnostico_ati_fk FOREIGN KEY (id_diagnostico) REFERENCES diagnostico (id)
+);

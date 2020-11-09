@@ -73,41 +73,77 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormABMEnfermedad.Designer.vb">
-      <DependentUpon>FormABMEnfermedad.vb</DependentUpon>
+    <Compile Include="FrmEliminarUsuario.Designer.vb">
+      <DependentUpon>FrmEliminarUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormABMEnfermedad.vb">
+    <Compile Include="FrmEliminarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormABMSintoma.Designer.vb">
-      <DependentUpon>FormABMSintoma.vb</DependentUpon>
+    <Compile Include="FrmNuevoUsuario.Designer.vb">
+      <DependentUpon>FrmNuevoUsuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormABMSintoma.vb">
+    <Compile Include="FrmNuevoUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCompone.Designer.vb">
-      <DependentUpon>FormCompone.vb</DependentUpon>
+    <Compile Include="FrmEliminarEnfermedad.Designer.vb">
+      <DependentUpon>FrmEliminarEnfermedad.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCompone.vb">
+    <Compile Include="FrmEliminarEnfermedad.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEnfermedad.Designer.vb">
-      <DependentUpon>FormEnfermedad.vb</DependentUpon>
+    <Compile Include="FrmEliminarSintoma.Designer.vb">
+      <DependentUpon>FrmEliminarSintoma.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormEnfermedad.vb">
+    <Compile Include="FrmEliminarSintoma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarUsuario.Designer.vb">
+      <DependentUpon>FrmModificarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarEnfermedad.Designer.vb">
+      <DependentUpon>FrmModificarEnfermedad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarEnfermedad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarSintoma.Designer.vb">
+      <DependentUpon>FrmModificarSintoma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarSintoma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevaEnfermedad.Designer.vb">
+      <DependentUpon>FrmNuevaEnfermedad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevaEnfermedad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoSintoma.Designer.vb">
+      <DependentUpon>FrmNuevoSintoma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoSintoma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSintomasCsv.Designer.vb">
+      <DependentUpon>FrmSintomasCsv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSintomasCsv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuGestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuGestion.Designer.vb">
+      <DependentUpon>FrmMenuGestion.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Login.Designer.vb">
       <DependentUpon>Frm_Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Frm_Login.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuGestion.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuGestion.Designer.vb">
-      <DependentUpon>MenuGestion.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -125,40 +161,49 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="FormSintoma.Designer.vb">
-      <DependentUpon>FormSintoma.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormSintoma.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormABMEnfermedad.resx">
-      <DependentUpon>FormABMEnfermedad.vb</DependentUpon>
+    <EmbeddedResource Include="FrmNuevoUsuario.resx">
+      <DependentUpon>FrmNuevoUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormABMSintoma.resx">
-      <DependentUpon>FormABMSintoma.vb</DependentUpon>
+    <EmbeddedResource Include="FrmEliminarEnfermedad.resx">
+      <DependentUpon>FrmEliminarEnfermedad.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCompone.resx">
-      <DependentUpon>FormCompone.vb</DependentUpon>
+    <EmbeddedResource Include="FrmEliminarSintoma.resx">
+      <DependentUpon>FrmEliminarSintoma.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEnfermedad.resx">
-      <DependentUpon>FormEnfermedad.vb</DependentUpon>
+    <EmbeddedResource Include="FrmModificarUsuario.resx">
+      <DependentUpon>FrmModificarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarEnfermedad.resx">
+      <DependentUpon>FrmModificarEnfermedad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarSintoma.resx">
+      <DependentUpon>FrmModificarSintoma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevaEnfermedad.resx">
+      <DependentUpon>FrmNuevaEnfermedad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoSintoma.resx">
+      <DependentUpon>FrmNuevoSintoma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSintomasCsv.resx">
+      <DependentUpon>FrmSintomasCsv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarUsuario.resx">
+      <DependentUpon>FrmEliminarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuGestion.resx">
+      <DependentUpon>FrmMenuGestion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuGestion.resx">
-      <DependentUpon>MenuGestion.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSintoma.resx">
-      <DependentUpon>FormSintoma.vb</DependentUpon>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +227,249 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Proxima_Nova.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Correcto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorrectoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CorrectoFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuidarteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuidarteLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesplegarChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarBloqueadoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarCorreoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnviarMensajeBloqueadoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalizarChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmLogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Historial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedIconFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedIconFondoObscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedLogoLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginMedico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_size.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_size_invert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men3n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHistoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PiePagina1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecomendacionMen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecomendacionMen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecomendacionWomen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir_Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgregarCircular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EliminarCircular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModificarCircular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reactivar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReactivarAceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddFondoClaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelCircular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refrescar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RefreshEnter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCircularVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCircularVerdeEnter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCircularVerdeEnterOscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCircularVerdeOscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelCircularRojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelCircularRojoEnter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelCircularRojoEnterOscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelCircularRojoOscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorFondoObscuro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuidarteIconoPaciente.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuidarteIconoPaciente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

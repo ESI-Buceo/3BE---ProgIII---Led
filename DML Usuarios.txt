@@ -1,0 +1,112 @@
+INSERT INTO
+	persona(ci, nombre, apellido, mail)
+VALUES
+	(53590226, 'Alejandro','Nunez','nunezalejandro019@gmail.com'),
+	(49249605, 'Gregory','House', 'egufabre@hotmail.com'),
+	(54083680, 'Leonardo','Santos','leonardosantosbran@gmail.com');
+
+INSERT INTO 
+	paciente(ci_persona, sexo, fecha_nac) 
+VALUES
+	(53590226, 0, '1998-04-25');
+
+INSERT INTO
+	enfermedades_cronicas (ci_persona_paciente, enfermedad)
+VALUES
+	(53590226, 'asma'),
+	(53590226, 'diabetes');
+
+INSERT INTO
+	medicaciones (ci_persona_paciente, medicacion)
+VALUES
+	(53590226, 'ventolin'),
+	(53590226, 'insulina');
+
+INSERT INTO
+	medico(ci_persona)
+VALUES
+	(49249605);
+
+INSERT INTO
+	administrativo(ci_persona)
+VALUES
+	(54083680);
+
+INSERT INTO
+	roles(ci_persona, rol)
+VALUES
+	(53590226, 1),
+	(49249605, 2),
+	(54083680, 3);
+
+CREATE USER '53590226'@'%'
+IDENTIFIED BY '53590226';
+
+GRANT 
+	SELECT ON led.roles TO '53590226'@'%';
+GRANT
+	SELECT ON led.sintoma TO '53590226'@'%';
+GRANT
+	SELECT ON led.enfermedad TO '53590226'@'%';
+GRANT
+	SELECT ON led.compone TO '53590226'@'%';
+GRANT
+	SELECT ON led.medico TO '53590226'@'%';
+GRANT
+	SELECT, INSERT ON led.genera TO '53590226'@'%';
+GRANT
+	SELECT, INSERT ON led.diagnostico TO '53590226'@'%';
+GRANT
+	SELECT, INSERT ON led.padece TO '53590226'@'%';
+GRANT
+	SELECT, UPDATE ON led.paciente TO '53590226'@'%';
+GRANT
+	SELECT, UPDATE ON led.persona TO '53590226'@'%';
+GRANT
+	SELECT, INSERT, DELETE ON led.enfermedades_cronicas TO '53590226'@'%';
+GRANT
+	SELECT, INSERT, DELETE ON led.medicaciones TO '53590226'@'%';
+GRANT
+	SELECT, INSERT, UPDATE ON led.atiende TO '53590226'@'%';
+
+CREATE USER
+	'49249605'@'%'
+IDENTIFIED BY
+	'49249605';
+
+GRANT
+	SELECT ON led.roles TO '49249605'@'%';
+GRANT
+	SELECT ON led.sintoma TO '49249605'@'%';
+GRANT 
+	SELECT ON led.enfermedad TO '49249605'@'%';
+GRANT 
+	SELECT ON led.compone TO '49249605'@'%';
+GRANT 
+	SELECT ON led.medico TO '49249605'@'%';
+GRANT
+	SELECT ON led.paciente TO '49249605'@'%';
+GRANT
+	SELECT ON led.persona TO '49249605'@'%';
+GRANT
+	SELECT ON led.enfermedades_cronicas TO '49249605'@'%';
+GRANT
+	SELECT ON led.medicaciones TO '49249605'@'%';
+GRANT
+	SELECT ON led.diagnostico TO '49249605'@'%';
+GRANT
+	SELECT ON led.genera TO '49249605'@'%';
+GRANT
+	SELECT, INSERT, UPDATE ON led.atiende TO '49249605'@'%';
+
+CREATE USER
+	'54083680'@'%'
+IDENTIFIED BY
+	'54083680';
+
+GRANT
+    ALL
+ON
+    led.*
+TO
+   '54083680'@'%';

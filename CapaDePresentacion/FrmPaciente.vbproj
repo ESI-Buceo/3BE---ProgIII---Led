@@ -72,10 +72,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Consultas.Designer.vb">
+      <DependentUpon>Frm_Consultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Consultas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Cambiar_Datos_Propios.Designer.vb">
+      <DependentUpon>Frm_Cambiar_Datos_Propios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Cambiar_Datos_Propios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Frm_Chat.Designer.vb">
       <DependentUpon>Frm_Chat.vb</DependentUpon>
     </Compile>
     <Compile Include="Frm_Chat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Iniciar_Chat.Designer.vb">
+      <DependentUpon>Frm_Iniciar_Chat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Iniciar_Chat.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Login.Designer.vb">
@@ -107,8 +125,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_Consultas.resx">
+      <DependentUpon>Frm_Consultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Cambiar_Datos_Propios.resx">
+      <DependentUpon>Frm_Cambiar_Datos_Propios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Chat.resx">
       <DependentUpon>Frm_Chat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Iniciar_Chat.resx">
+      <DependentUpon>Frm_Iniciar_Chat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.vb</DependentUpon>
@@ -143,6 +170,109 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CuidarteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotonIngresar4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmLogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuHamb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fem4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Men3n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Correcto.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\AddCircularVerde.png" />
+    <None Include="Resources\AddCircularVerdeEnter.png" />
+    <None Include="Resources\AddCircularVerdeEnterOscuro.png" />
+    <None Include="Resources\AddCircularVerdeOscuro.png" />
+    <Content Include="Resources\CorrectoFondoClaro.png" />
+    <None Include="Resources\CorrectoFondoClaro1.png" />
+    <Content Include="Resources\CorrectoFondoObscuro.png" />
+    <None Include="Resources\EnviarBloqueadoFondoClaro.png" />
+    <None Include="Resources\EnviarFondoClaro.png" />
+    <None Include="Resources\EnviarFondoObscuro.png" />
+    <None Include="Resources\CuidarteIcon1.png" />
+    <None Include="Resources\DelCircularRojo.png" />
+    <None Include="Resources\DelCircularRojoEnter.png" />
+    <None Include="Resources\DelCircularRojoEnterOscuro.png" />
+    <None Include="Resources\DelCircularRojoOscuro.png" />
+    <Content Include="Resources\ErrorFondoClaro.png" />
+    <None Include="Resources\ErrorFondoClaro1.png" />
+    <Content Include="Resources\ErrorFondoObscuro.png" />
+    <None Include="Resources\FrmLogin11.png" />
+    <Content Include="Resources\Historial.png" />
+    <None Include="Resources\Info.png" />
+    <None Include="Resources\LedIcon.png" />
+    <Content Include="Resources\InfoFondoClaro.png" />
+    <None Include="Resources\InfoFondoClaro1.png" />
+    <Content Include="Resources\InfoFondoObscuro.png" />
+    <Content Include="Resources\LedIconFondoClaro.png" />
+    <Content Include="Resources\LedIconFondoObscuro.png" />
+    <Content Include="Resources\MenuHistoria.png" />
+    <None Include="Resources\MenuHistoria1.png" />
+    <None Include="Resources\Historial1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

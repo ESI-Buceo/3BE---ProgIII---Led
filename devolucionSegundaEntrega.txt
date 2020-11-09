@@ -1,0 +1,8 @@
+- Si los sintomas no devuelven diagnostico, AVISAR
+- Controlar que a la app de medico no ingresen pacientes
+- App medio no cierra sesion, ni sale con el boton salir
+- Pedir confirmacion para cerrar ventanas
+- Hacer que la app de gestion funcione
+
+Nota: 9
+
